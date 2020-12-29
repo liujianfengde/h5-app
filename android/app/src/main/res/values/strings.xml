@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">opt协同办公</string>
+    <string name="go_url_title">输入访问地址</string>
+    <string name="go_url_btn_title">访问地址</string>
+    <string name="go_baidu_demo_btn_title">访问百度地址DEMO</string>
+    <string name="web_view_url_reload_content">重新加载</string>
+    <string name="web_view_load_error_content">加载失败</string>
+    <string name="web_view_network_not_available_content">请检查您的网络状态</string>
+    <string name="web_view_go_network_setting">去设置</string>
+    <string name="open_qrcode_btn_content">扫描二维码</string>
+    <string name="exit_warning_message">再次点击返回退出应用</string>
+    <string name="loading">正在加载...</string>
+</resources>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<title></title>
+	<style type="text/css">
+		html{height: 100%}
+		body{height: 100%;margin: 0px;padding: 0px;}
+		.title-bar{
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			height: 42px;
+			line-height: 42px;
+			width: 100%;
+			z-index: 10000;
+			background: white;
+		}
+
+		.back{
+			width: 42px;
+			text-align: center;
+			cursor: pointer;
+		}
+		#container{
+			height: 100%;
+			width: 100%;
+		}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=GGfdL9KNPl7Hqxm6fMZ0ySQqHtPPWYPh"></script>
+</head>
+<body>
+	<div class="title-bar">
+		<div class="back" onclick="goBack();"><</div>
+	</div>
+	<div id="container"></div>
+</body>
+<script type="text/javascript">
+	var lng,lat;
+	var map = new BMap.Map("container");
+	var point = new BMap.Point(116.525453,39.806429);
+
+	var points = [
+		new BMap.Point(116.475453,39.716429),
+		new BMap.Point(116.587133,39.866714),
+		new BMap.Point(116.479418,39.888140),
+		new BMap.Point(116.574812,39.860366),
+		new BMap.Point(116.479644,39.890240),
+		new BMap.Point(116.477968,39.891929),
+		new BMap.Point(116.478685,39.891881),
+		new BMap.Point(116.586998,39.866873),
+		new BMap.Point(116.580078,39.867672),
+		new BMap.Point(116.487073,39.866935)
+	];
+
+	for(var i = 0; i < points.length; i++){
+		var mk = new BMap.Marker(points[i]);
+		map.addOverlay(mk);
+	}
+
+	map.centerAndZoom(point,12);
+	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+
+    function goBack(){
+    	history.back();
+    }
+</script>
+</html>

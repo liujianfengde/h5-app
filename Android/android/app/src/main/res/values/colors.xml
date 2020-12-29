@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff4f8edd</color>
+    <color name="colorPrimaryDark">#ff4f8edd</color>
+    <color name="colorAccent">#ff4f8edd</color>
+    <color name="app_main_color">#ff4f8edd</color>
+
+    <color name="AppThemeBackground">#ff3f8ef7</color>
+    <color name="AppThemeTextColor">#ffffff</color>
+    <color name="web_view_progress_color">#ff4f8edd</color>
+    <color name="primary_dark">#000000</color>
+    <color name="gray_color">#e8e8e8</color>
+    <color name="line">#ededed</color>
+</resources>
